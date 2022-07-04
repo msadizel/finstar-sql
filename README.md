@@ -11,7 +11,7 @@ group by clientname
 select c.* from clients c
 left join clientContacts cc on c.id = cc.clientId
 group by c.clientname, c.id
-having count(cc.id) >= 2
+having count(cc.id) > 2
 
 
 ### `Задание 3`

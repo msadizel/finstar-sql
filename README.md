@@ -2,7 +2,7 @@
 
 Использован синтаксис MS SQL
 
-Задание 2.
+### `Задание 2`
 
 select clientName, count(cc.id) as contactCount from clients c
 left join clientContacts cc on c.id = cc.clientId
@@ -14,7 +14,7 @@ group by c.clientname, c.id
 having count(cc.id) >= 2
 
 
-Задание 3.
+### `Задание 3`
 
 declare @dates table
 (
